@@ -16,108 +16,142 @@ body {
     background-repeat: no-repeat;
 }
 
-header h2 {
+header h1 {
     text-align: center;
-    font-size: 90px;
+    font-size: 45px;
     color: rgb(255, 255, 255);
-    text-shadow:5px 5px 2px rgb(10, 2, 2);
     letter-spacing: 5px;
     height:160px;
-    width:1155px;
+    width:500px;
     margin-left: -9px;
     margin-top: 7%;
-    
-   
-}
-header h4{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    margin-left: 600px;
-    margin-top: -6%;
-    text-shadow:5px 5px 2px rgb(10, 2, 2);
 }
 header {
-   
-    margin-top: -6%;
-    background-image:url(".trashed-1680693617-IMG20230110170715.jpg");
-    background-size: 100% 100%;
-    height: 470px;
-    
+    height: 100px;
+}
+
+nav{
+    display:flex;
+    padding:2% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.body1{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images\ \(1\).jpeg);
+    background-position: centre;
+    background-size:contain;
+    padding: 30px;
+}
+p{
+    text-decoration-color: #fff;
+}
+nav img{
+    width:500px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
 }
 
 
-nav {
-    margin-top: -3%;
-    background-color: #03011b;
-    width: 800px;
-    letter-spacing: 3px;
-    text-align: center;
-    height: 40px;
-    border-radius: 20px;
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
 }
-nav a {
-    text-decoration: rgb(46, 196, 126);
-    margin-right:90px;
-    padding-left: 7px;
-    float: left;
-    color: white;
-    text-decoration: solid;
-    position:sticky;
-    
+
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    display:block;
+    margin:auto;
+    transition:0.3s;
 }
-nav a:hover{
-    color: rgb(189, 15, 15);
+
+
+.nav-links ul li:hover::after{
+    width:100%;
 }
-nav a:visited{
-    color: rgb(20, 147, 220);
-}
+
 main {
-    
     text-align: center;
 }
 
-h2 {
-    padding: 20px;
+.middle{
+    height:300px;
 }
 
-section:nth-child(even) {
-    background-color: rgb(194, 9, 9);
+.middle img{
+    width:200px;
+
+}
+.distance{
+    padding:15px;
 }
 
-section {
-    min-height: 100px;
+.leftbox{
+    float:left;
+    width:50%;
+    height: 250px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.leftbox img{
+    height:300px
+    width:300px;
+    border-radius: 10px;
+}
+.leftbox img:hover{
+    transition: 0.3s;
+    width:300px;
+    border-radius: 10px;
+}
+.rightbox{
+    float:right;
+    width:50%;
+    height: 250px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-video {
-    padding: 10px;
+
+.rightbox img{
+    height:300px
+    width:300px;
+    border-radius: 10px;
 }
+
+.rightbox img:hover{
+    transition: 0.3s;
+    width:550px;
+    border-radius: 10px;
+}
+
+.rightbox1 img{
+    width:450px;
+    border-radius: 10px;
+}
+
+.rightbox1 img:hover{
+    transition: 0.3s;
+    width:500px;
+    border-radius: 10px;
+}
+
 
 iframe {
     height: 75px;
-}
-
-img{
-    margin-top: -3%;
-    margin-left: 19px;
-    float: right;
-    position: sticky;
-}
-img.a{
-    margin-top: 2%;
-    margin-left: 290px;
-    float: left;
-    border-radius: 5px;
-    background-color:rgb(3, 53, 22);
-    padding:4px;
-}
-img.b{
-    margin-top: 2%;
-    margin-left: 110px;
-    float: left;
-    border-radius: 5px;
-    background-color:rgb(2, 22, 29);
-    padding:4px;
-
 }
 
 section h5 {
@@ -142,31 +176,54 @@ footer a {
     <link rel="stylesheet" href="style.css">
     </head>
         <body>
-            
             <header>
-                <br>
-                <h2><img class="a" src="IIIT_Surat_logo.jpg" height="150">
-                   IIIT SURAT </h2><h4>(An Institute of National Importance)</h4>
-            </header>
-            <nav>
+            <section>
+                <nav>
+                    <a href="index.html"><img src="download.png"></a>
+                    <!-- <h1>IIIT Surat</h1> -->
+                    <div class="nav-links" id="navLinks">
+                        <ul>
+                            <li></li><a href="http://www.iiitsurat.ac.in/index.html" target="_blank">HOME</a></li>
+                            <li></li><a href="http://www.iiitsurat.ac.in/TnP.html" target="_blank">PLACEMENTS</a></li>
+                            <li></li><a href="http://www.iiitsurat.ac.in/B-Tech.html" target="_blank">ACADEMICS</a></li>
+                            <li></li><a href="http://www.iiitsurat.ac.in/admission.html" target="_blank">ADMISSION</a></li>
+                        </ul> 
+                    </div>
+                    
+                </nav>
                 
-                <a href="http://www.iiitsurat.ac.in/index.html">HOME</a>
-                <a href="http://www.iiitsurat.ac.in/TnP.html">PLACEMENTS</a>
-                <a href="http://www.iiitsurat.ac.in/B-Tech.html">ACADEMICS</a>
-                <a href="http://www.iiitsurat.ac.in/admission.html">ADMISSION</a>
-
-            </nav>
-            
-            
-             
-             <img src="download.png">
+            </section>
+            <hr>
+            <br><br>
+        </header>
             <br><br><br><br>
-             <img class="b" src=".trashed-1680693617-IMG20230109144939.jpg" height="200" width="200">
-             <img class="b" src=".trashed-1680693617-IMG20230109170311.jpg" height="200" width="200">
-             <img class="b" src=".trashed-1680693617-IMG20230110170715.jpg" height="200" width="200">
-             <img class="b" src=".trashed-1680693263-IMG20230120165605.jpg" height="200" width="200">
+            <section class="distance">
+                <div class="leftbox">
+                    <br>
+                    <img class="b" src="pic1.jpg" height="200" width="200">
+                </div>
+                <div class="rightbox">  
+                    <img class="b" src="pic2.jpg" height="200" width="200">
+                </div>
+            </section>
+            <section class="distance">
+                <div class="leftbox">
+                    <br>
+                    <img class="b" src="pic3.jpg" height="200" width="200">
+                </div>
+                <div class="rightbox">  
+                    <img class="b" src="pic4.jpg" height="200" width="200">
+                </div>
+            </section>
+            
+             <br>
+             <br><br><br>
+             <br>
+             <section class="body1">
+                
+             
             <h1>About IIIT SURAT</h1>
-            <p><h4>Indian Institute of Information Technology Surat is an Institute of National Importance established under the Act of Parliament 2017, by erstwhile Ministry of Human Resource Development (MHRD), Government of India, on not-for-profit and in Public-Private-Partnership basis. A memorandum of understanding was signed in 2016 between the President of India, the Governor of the State of Gujarat and Industry partners namely; Gujarat Narmada valley Fertilizer and Chemicals (GNFC), Gujarat Informatics Limited (GIL) and Gujarat Gas Limited. The Institute started in 2017 with SVNIT as mentoring Institute.
+            <p ><h4>Indian Institute of Information Technology Surat is an Institute of National Importance established under the Act of Parliament 2017, by erstwhile Ministry of Human Resource Development (MHRD), Government of India, on not-for-profit and in Public-Private-Partnership basis. A memorandum of understanding was signed in 2016 between the President of India, the Governor of the State of Gujarat and Industry partners namely; Gujarat Narmada valley Fertilizer and Chemicals (GNFC), Gujarat Informatics Limited (GIL) and Gujarat Gas Limited. The Institute started in 2017 with SVNIT as mentoring Institute.
 
                 The Government of Gujarat has allotted 28.71 Acre of land for developing the infrastructure. The Institute is in its own new academic facility at Kholvad in Kamrej Taluka of Surat District. The campus is close to National Highway No.48, linking Mumbai to New Delhi.
                 
@@ -204,7 +261,7 @@ footer a {
                     
                     Training & Placement Officer</h4></p>
                 <a href="file:///C:/Users/kumar/OneDrive/Desktop/form.html">PAY NOW</a>
-            
+            </section>
         </body>
     
 </html>
